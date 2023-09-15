@@ -1,1 +1,38 @@
+The software source code in the public domain of VS Online Services Pvt Ltd's open-source edition is governed by the VS Online Services Open Software License 3.0 (VSOS-OSL-3.0), which incorporates the supplementary/Additional terms outlined herein.
+
+For reference, you can find the original Open Software License 3.0 (OSL-3.0) at: https://opensource.org/licenses/OSL-3.0
+
+These additional or supplementary terms are specific to the VS Online Services / vsEcommerce Open Source License (VSOS-OSL-3.0) and take precedence over any provisions in the original OSL.
+
+##Effect
+
+ 
+The terms set forth in this vsEcommerce / VS Online Services Open Source License (“License”) – provided by VS Online Services Pvt Ltd, include additional conditions that pertain to the usage rights granted within this License
+
+##Restrictions On Use
+
+"By downloading or utilizing the Original Work from any public repositories (e.g., GitHub, etc.) and/or any Derivative Works, you hereby acknowledge and accept the terms outlined in this License, including the following provisions:
+
+Non-Production Use: This refers to internal use solely by the licensee and its employees, exclusively for the licensee's benefit. It is limited to purposes such as development, internal evaluation, testing, and demonstrations, all conducted within a non-production environment, such as for development and testing purposes.
+
+Production Environment: This term denotes the environment employed by the licensee for business operations or intended uses, as well as for services and stores intended for the licensee's customers. Any utilization of the Original Work and/or Derivative Works for the development of a commercial or commercially applicable product or solution, whether for the licensee's own advantage or on behalf of the licensee's clients, will be categorized as usage within the Production Environment. Such usage necessitates the execution of a valid vsEcommerce Commercial License Agreement from VS Online Services Pvt Ltd "
+
+These amendments are intended to offer a more concise and organized clarification of the conditions pertaining to usage rights and the delineation of production environments.
+
+##No Support Services with the License
+ 
+
+This License is provided without any support services, maintenance or other services.
+
+##Mandatory Content
+
+The requirement for the inclusion of the "powered by vsEcommerce" text applies to every individual page within a web or mobile application where the vsEcommerce engine is utilized, either in full or in part. Additionally, this text should include a hyperlink directing users to either www.vsonlineservices.com or www.vsecommerce.com. You may also incorporate the vsEcommerce logo alongside the text.
+
+Furthermore, the "powered by vsEcommerce" text must be clearly visible to all users and must be present on every user interface screen, even when only the API of the vsEcommerce engine is used within a page. This obligation extends to any copies or derivative works created based on the software.
+
+If you wish to remove the copyright information of VS Online Services, please contact sales@vsonlineservices.com or siva@vsonlineservices.com for further assistance.
+
+##Third party content
+
+Third-party content can be incorporated into vsEcommerce provided that the original authors have released it under a compatible license. However, before incorporating the proposed content, it is essential to ensure that it is available under a compatible license. Additionally, a thorough review should be conducted to confirm that there are no supplementary clauses that might introduce usage restrictions
 
