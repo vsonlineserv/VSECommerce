@@ -4,12 +4,12 @@ For reference, you can find the original Open Software License 3.0 (OSL-3.0) at:
 
 These additional or supplementary terms are specific to the VS Online Services / vsEcommerce Open Source License (VSOS-OSL-3.0) and take precedence over any provisions in the original OSL.
 
-##Effect
+Effect
 
  
 The terms set forth in this vsEcommerce / VS Online Services Open Source License (“License”) – provided by VS Online Services Pvt Ltd, include additional conditions that pertain to the usage rights granted within this License
 
-##Restrictions On Use
+Restrictions On Use
 
 "By downloading or utilizing the Original Work from any public repositories (e.g., GitHub, etc.) and/or any Derivative Works, you hereby acknowledge and accept the terms outlined in this License, including the following provisions:
 
@@ -19,12 +19,12 @@ Production Environment: This term denotes the environment employed by the licens
 
 These amendments are intended to offer a more concise and organized clarification of the conditions pertaining to usage rights and the delineation of production environments.
 
-##No Support Services with the License
+No Support Services with the License
  
 
 This License is provided without any support services, maintenance or other services.
 
-##Mandatory Content
+Mandatory Content
 
 The requirement for the inclusion of the "powered by vsEcommerce" text applies to every individual page within a web or mobile application where the vsEcommerce engine is utilized, either in full or in part. Additionally, this text should include a hyperlink directing users to either www.vsonlineservices.com or www.vsecommerce.com. You may also incorporate the vsEcommerce logo alongside the text.
 
@@ -32,7 +32,8 @@ Furthermore, the "powered by vsEcommerce" text must be clearly visible to all us
 
 If you wish to remove the copyright information of VS Online Services, please contact sales@vsonlineservices.com or siva@vsonlineservices.com for further assistance.
 
-##Third party content
+Third party content
 
 Third-party content can be incorporated into vsEcommerce provided that the original authors have released it under a compatible license. However, before incorporating the proposed content, it is essential to ensure that it is available under a compatible license. Additionally, a thorough review should be conducted to confirm that there are no supplementary clauses that might introduce usage restrictions
 
+You may also view this file in http://vsonlineservices.com/open-source-license
