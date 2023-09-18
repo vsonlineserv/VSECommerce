@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>WinExe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCoreRateLimit" Version="4.0.2" />
+    <PackageReference Include="AuthPermissions.AspNetCore" Version="3.3.0" />
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="ClosedXML" Version="0.96.0" />
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+    <PackageReference Include="FirebaseAdminCore" Version="2.0.0" />
+    <PackageReference Include="log4net" Version="2.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.Identity.Web" Version="1.25.2" />
+    <PackageReference Include="NWebsec.AspNetCore.Core" Version="3.0.1" />
+    <PackageReference Include="Octopus.Client" Version="13.2.172" />
+    <PackageReference Include="PagedList" Version="1.17.0" />
+    <PackageReference Include="System.Runtime.Caching" Version="6.0.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+    <PackageReference Include="CCAvenueCryptoPackage" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VSOnline.VSECommerce.Domain\VSOnline.VSECommerce.Domain.csproj" />
+    <ProjectReference Include="..\VSOnline.VSECommerce.Persistence\VSOnline.VSECommerce.Persistence.csproj" />
+    <ProjectReference Include="..\VSOnline.VSECommerce.Utilities\VSOnline.VSECommerce.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>

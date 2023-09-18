@@ -1,0 +1,17 @@
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\bin\Release\net6.0\VSOnline.VSECommerce.Persistence.deps.json
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\bin\Release\net6.0\VSOnline.VSECommerce.Persistence.runtimeconfig.json
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\bin\Release\net6.0\VSOnline.VSECommerce.Persistence.dll
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\bin\Release\net6.0\VSOnline.VSECommerce.Persistence.pdb
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\bin\Release\net6.0\VSOnline.VSECommerce.Utilities.dll
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\bin\Release\net6.0\VSOnline.VSECommerce.Utilities.pdb
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\obj\Release\net6.0\VSOnline.VSECommerce.Persistence.csproj.AssemblyReference.cache
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\obj\Release\net6.0\VSOnline.VSECommerce.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\obj\Release\net6.0\VSOnline.VSECommerce.Persistence.AssemblyInfoInputs.cache
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\obj\Release\net6.0\VSOnline.VSECommerce.Persistence.AssemblyInfo.cs
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\obj\Release\net6.0\VSOnline.VSECommerce.Persistence.csproj.CoreCompileInputs.cache
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\obj\Release\net6.0\VSOnline.VSECommerce.Persistence.csproj.CopyComplete
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\obj\Release\net6.0\VSOnline.VSECommerce.Persistence.dll
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\obj\Release\net6.0\refint\VSOnline.VSECommerce.Persistence.dll
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\obj\Release\net6.0\VSOnline.VSECommerce.Persistence.pdb
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\obj\Release\net6.0\VSOnline.VSECommerce.Persistence.genruntimeconfig.cache
+E:\Product\new\newGit\vsecommerce\VSOnline.VSECommerce\VSOnline.VSECommerce.Persistence\obj\Release\net6.0\ref\VSOnline.VSECommerce.Persistence.dll

@@ -1,0 +1,2 @@
+Dear Registered Customer you received reply for {productName} 
+from {store}. - VBuy.in

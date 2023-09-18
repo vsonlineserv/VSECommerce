@@ -1,0 +1,2 @@
+Dear Registered Customer {user} enquiry for {productName}
+ct:{mobile} -VBuy.in

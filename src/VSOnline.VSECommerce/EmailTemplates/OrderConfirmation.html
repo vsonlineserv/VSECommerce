@@ -1,0 +1,153 @@
+﻿<div style="position:absolute; width:635px; background-color:#ffffff; padding:30px;font-size:14px">
+    <!-- <table>
+        <tr>
+            <td style="width:20%">
+                <a href=""><img src="" alt="logo" />
+                </a>
+            </td>
+
+        </tr>
+    </table> -->
+    <br />
+    <strong><span style="font-size:20px"> Thank you. </span></strong>
+    <p> Here's your confirmation for order number <strong>{orderNumber}</strong></p>
+    <table class="table-bordered" width="100%">
+        <tr>
+            <td width="30%" align="center">
+                Product
+            </td>
+            <td width="10%" align="center">
+                <strong> QTY </strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>UNIT PRICE</strong>
+            </td>
+            <td width="15%" align="center">
+                <strong>SUB TOTAL</strong>
+            </td>
+        </tr>
+        {trOrderConfirmation}
+        <tr>
+            <td width="30%">
+            </td>
+            <td>
+            </td>
+            <td align="right">
+            </td>
+            <td align="right">
+            </td>
+        </tr>
+    </table>
+    <div>
+        <table width="100%">
+            <tr>
+                <td width="20%"></td>
+                <td width="20%"></td>
+                <td width="20%" class="text-right">
+                    <h4><strong>Order Total</strong></h4>
+                </td>
+                <td width="20%" class="text-right">
+                    <h4> <strong>{orderTotalInclTax}</strong></h4>
+                </td>
+            </tr>
+            <tr>
+                <td width="20%"></td>
+                <td width="20%"></td>
+                <td width="20%" class="text-right">
+                    <h6><strong>Shipping</strong></h6>
+                </td>
+                <td width="20%" class="text-right">
+                    <h6> <strong>{shippingCharges}</strong></h6>
+                </td>
+
+            </tr>
+            <tr>
+                <td width="20%"></td>
+                <td width="20%"></td>
+                <td width="20%" class="text-right">
+                    <h6><strong>Tax</strong></h6>
+                </td>
+                <td width="20%" class="text-right">
+                    <h6> <strong>{OrderTaxTotal}</strong></h6>
+                </td>
+
+            </tr>
+            <tr>
+                <td width="20%"></td>
+                <td width="20%" class="text-right"></td>
+                <td width="20%" class="text-right">
+
+                    <h6><strong>Coupon Discount</strong></h6>
+                </td>
+                <td width="20%" class="text-right">
+                    <h6> <strong>{orderDiscount}</strong></h6>
+                </td>
+
+            </tr>
+            <tr>
+                <td width="20%"></td>
+                <td width="20%"></td>
+                <td width="20%" class="text-right">
+                    <h3><strong>Net Payable</strong></h3>
+                </td>
+                <td width="20%" class="text-right">
+                    <h3> <strong>{netPayable}</strong></h3>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <br class="clear" />
+        <span class="compareDropDownHeader"> Customer Information</span>
+        <br class="clear" />
+        <br />
+        <span>Name:- {CustomerName}</span><br />
+        <span>Email :- {CustomerEmail}</span>
+        <br />
+    </div>
+    <div>
+        <br class="clear" />
+        <span class="compareDropDownHeader"> Shipping Information</span>
+        <br class="clear" />
+        <br />
+        <span>
+            {Address1}
+        </span>
+        <br />
+        <span>{Address2}</span>
+        <br />
+        <span>{City}</span><br />
+        <span>{State}</span><br />
+        <span>Pincode: {PostalCode}</span><br />
+        <span>Phone :{PhoneNumber}</span> <br />
+    </div>
+    <br />
+    <div>
+        <span>WE'RE HERE TO HELP!</span><br />
+        <span><strong>Thank you,</strong></span><br />
+        <span><strong>{storeName} Team.</strong></span>
+    </div>
+    <br />
+    <div>
+        <span>Powered by vsEcommerce</span>
+    </div>
+    <br>
+    <div style="bottom: 0;width: 100%;z-index: 1;border-top: 1px solid rgb(158, 158, 158);border-bottom: 1px solid
+rgb(158, 158, 158); padding: 10px 0;">
+        <div style="width: 95%; margin: 0 auto;">
+            <div style="margin-bottom: 13px;align-items: center;display:flex;flex-wrap:wrap">
+                <div style="width:50%;min-width:300px">
+                    <img src="https://www.vsonlineservices.com/assets/images/logo/VS_Logo_TEXT_New.png" alt="vselogo">
+                </div>
+                <div style="width: 50%; min-width: 300px ">
+                    <p style="margin: 0; margin-bottom: 5px;font-size: 8px">support@vsonlineservices.com</p>
+                    <p style="margin: 0; margin-bottom: 5px;font-size: 8px;">
+                        This e-mail is generated from VS Online
+                        Services, India. If you think this is SPAM, please report to support@vsonlineservices.com
+                        for immediate action.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

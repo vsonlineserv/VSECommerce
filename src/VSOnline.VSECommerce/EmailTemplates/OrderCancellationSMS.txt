@@ -1,0 +1,1 @@
+Dear Registered Customer your Order {orderNumber} is cancelled with VBuy.in. Refund(if any) will take 7 to 10 working days.

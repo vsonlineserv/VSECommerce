@@ -1,0 +1,1 @@
+Dear Registered Customer your Order {orderNumber} is placed with VBuy.in. Order will be processed after verification

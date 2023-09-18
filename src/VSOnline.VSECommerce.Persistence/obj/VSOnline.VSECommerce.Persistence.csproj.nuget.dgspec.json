@@ -1,0 +1,218 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Product\\ForGitHub\\VSOnline.VSECommerce\\VSOnline.VSECommerce\\VSOnline.VSECommerce.Persistence\\VSOnline.VSECommerce.Persistence.csproj": {}
+  },
+  "projects": {
+    "E:\\Product\\ForGitHub\\VSOnline.VSECommerce\\VSOnline.VSECommerce\\VSOnline.VSECommerce.Persistence\\VSOnline.VSECommerce.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Product\\ForGitHub\\VSOnline.VSECommerce\\VSOnline.VSECommerce\\VSOnline.VSECommerce.Persistence\\VSOnline.VSECommerce.Persistence.csproj",
+        "projectName": "VSOnline.VSECommerce.Persistence",
+        "projectPath": "E:\\Product\\ForGitHub\\VSOnline.VSECommerce\\VSOnline.VSECommerce\\VSOnline.VSECommerce.Persistence\\VSOnline.VSECommerce.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "E:\\Product\\ForGitHub\\VSOnline.VSECommerce\\VSOnline.VSECommerce\\VSOnline.VSECommerce.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Product\\ForGitHub\\VSOnline.VSECommerce\\VSOnline.VSECommerce\\VSOnline.VSECommerce.Utilities\\VSOnline.VSECommerce.Utilities.csproj": {
+                "projectPath": "E:\\Product\\ForGitHub\\VSOnline.VSECommerce\\VSOnline.VSECommerce\\VSOnline.VSECommerce.Utilities\\VSOnline.VSECommerce.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AuthPermissions.AspNetCore": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "CCAvenueCryptoPackage": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "FirebaseAdminCore": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "PagedList": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "System.Runtime.Caching": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Product\\ForGitHub\\VSOnline.VSECommerce\\VSOnline.VSECommerce\\VSOnline.VSECommerce.Utilities\\VSOnline.VSECommerce.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Product\\ForGitHub\\VSOnline.VSECommerce\\VSOnline.VSECommerce\\VSOnline.VSECommerce.Utilities\\VSOnline.VSECommerce.Utilities.csproj",
+        "projectName": "VSOnline.VSECommerce.Utilities",
+        "projectPath": "E:\\Product\\ForGitHub\\VSOnline.VSECommerce\\VSOnline.VSECommerce\\VSOnline.VSECommerce.Utilities\\VSOnline.VSECommerce.Utilities.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "E:\\Product\\ForGitHub\\VSOnline.VSECommerce\\VSOnline.VSECommerce\\VSOnline.VSECommerce.Utilities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AuthPermissions.AspNetCore": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "CCAvenueCryptoPackage": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "FirebaseAdminCore": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "PagedList": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "ServiceStack": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "System.Runtime.Caching": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
