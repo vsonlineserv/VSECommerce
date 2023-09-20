@@ -295,6 +295,7 @@ namespace VSOnline.VSECommerce.Domain
                 user.Email = userModel.Email;
                 user.UserGuid = Guid.NewGuid();
                 user.FirstName = userModel.FirstName;
+                user.LastName = userModel.LastName;
                 user.PhoneNumber1 = userModel.PhoneNumber;
                 user.PasswordFormatId = 1;
                 user.PasswordSalt = DateTime.Now.Year + "_VBuy.in";
@@ -313,18 +314,17 @@ namespace VSOnline.VSECommerce.Domain
             }
             return Tuple.Create(true, userId);
         }
-        public bool AddSellerStaffMapping(int storeId, int branchId, int user, int? StoreRefereneId)
+        public bool AddSellerStaffMapping(int storeId, int branchId, int user)
         {
             try
             {
-                var sellerStaffDetails = _context.SellerStaffMapping.Where(x => x.StoreRefereneId == StoreRefereneId && x.StoreId == storeId && x.BranchId == branchId && x.UserId == user).FirstOrDefault();
+                var sellerStaffDetails = _context.SellerStaffMapping.Where(x => x.StoreId == storeId && x.BranchId == branchId && x.UserId == user).FirstOrDefault();
                 if (sellerStaffDetails == null)
                 {
                     SellerStaffMapping sellerStaffMapping = new SellerStaffMapping();
                     sellerStaffMapping.StoreId = storeId;
                     sellerStaffMapping.BranchId = branchId;
                     sellerStaffMapping.UserId = user;
-                    sellerStaffMapping.StoreRefereneId = (int)StoreRefereneId;
                     sellerStaffMapping.CreatedOnUtc = DateTime.UtcNow;
                     _context.SellerStaffMapping.Add(sellerStaffMapping);
                     _context.SaveChanges();
@@ -339,7 +339,7 @@ namespace VSOnline.VSECommerce.Domain
         public User GetUser(string userName)
         {
             User user = new User();
-            user = _context.User.Where<User>(x => (x.Email == userName || x.PhoneNumber1 == userName)).FirstOrDefault<User>();
+            user = _context.User.Where<User>(x => (x.Email == userName || x.PhoneNumber1 == userName) && (x.Deleted == null || x.Deleted == false)).FirstOrDefault<User>();
             return user;
         }
 
@@ -917,7 +917,7 @@ namespace VSOnline.VSECommerce.Domain
         }
         public int ValidateVSUsers(string userName, string password)
         {
-            var userDetails = _context.User.Where<User>(x => (x.Email == userName || x.PhoneNumber1 == userName) && x.IsMerchant == true).FirstOrDefault<User>();
+            var userDetails = _context.User.Where<User>(x => (x.Email == userName || x.PhoneNumber1 == userName) && x.IsMerchant == true && (x.Deleted == null || x.Deleted == false)).FirstOrDefault<User>();
             if (userDetails != null)
             {
                 var passwordHash = GeneratePassword(password, userDetails.PasswordSalt);
@@ -930,7 +930,7 @@ namespace VSOnline.VSECommerce.Domain
             }
             else
             {
-                var staffDetails = _context.User.Where<User>(x => (x.Email == userName || x.PhoneNumber1 == userName) && x.IsSales == true).FirstOrDefault<User>();
+                var staffDetails = _context.User.Where<User>(x => (x.Email == userName || x.PhoneNumber1 == userName) && x.IsSales == true && (x.Deleted == null || x.Deleted == false)).FirstOrDefault<User>();
                 if (staffDetails != null)
                 {
                     var passwordHash = GeneratePassword(password, staffDetails.PasswordSalt);
@@ -944,6 +944,94 @@ namespace VSOnline.VSECommerce.Domain
             }
             return 0;
 
+        }
+        public bool UpdatePasswordMerchant(int userId, string password)
+        {
+            try
+            {
+                var passwordSalt = DateTime.Now.Year + "_VBuy.in";
+                var updatedPassword = GeneratePassword(password, passwordSalt);
+
+                var user = _context.User.Where<User>(x => x.UserId == userId).FirstOrDefault<User>();
+                if (user != null)
+                {
+                    user.Password = updatedPassword;
+                    user.PasswordSalt = passwordSalt;
+                    user.UpdatedOnUtc = DateTime.UtcNow;
+                    _context.User.Update(user);
+                    _context.SaveChanges();
+                    return true;
+                }
+            }
+            catch
+            {
+
+            }
+            return false;
+        }
+        public void PasswordResetCompeleted(string username, string uniqueId)
+        {
+            try
+            {
+                var updateFlagQuery = _context.PasswordReset.Where(x => x.Username == username && x.PasswordResetToken == uniqueId).FirstOrDefault();
+                if (updateFlagQuery != null)
+                {
+                    updateFlagQuery.FlagCompleted = true;
+                    _context.PasswordReset.Update(updateFlagQuery);
+                    _context.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+        public int GenerateResetPasswordLinkQuery(string username, out string passwordResetToken)
+        {
+            try
+            {
+                int affectedRows = 0;
+                passwordResetToken = Convert.ToString(GenerateUniquePasswordResetToken(username));
+                DateTime PasswordResetExpiration = DateTime.UtcNow.AddDays(1);
+
+                var userInPasswordReset = _context.PasswordReset.Where(x => x.Username == username).FirstOrDefault();
+                if (userInPasswordReset != null)
+                {
+                    userInPasswordReset.PasswordResetToken = passwordResetToken;
+                    userInPasswordReset.PasswordResetExpiration = PasswordResetExpiration;
+                    userInPasswordReset.FlagCompleted = false;
+                    _context.PasswordReset.Update(userInPasswordReset);
+                    affectedRows = _context.SaveChanges();
+                }
+                else
+                {
+                    PasswordReset passwordReset = new PasswordReset();
+                    passwordReset.Username = username;
+                    passwordReset.PasswordResetToken = passwordResetToken;
+                    passwordReset.PasswordResetExpiration = PasswordResetExpiration;
+                    _context.PasswordReset.Add(passwordReset);
+                    affectedRows = _context.SaveChanges();
+                }
+                return affectedRows;
+            }
+            catch (Exception ex)
+            {
+                passwordResetToken = null;
+                return 0;
+            }
+
+        }
+        public bool CheckUserDataInPasswordReset(string username, string uniqueId)
+        {
+            try
+            {
+                var userInPasswordReset = _context.PasswordReset.Where(x => x.Username == username && x.PasswordResetToken == uniqueId && x.FlagCompleted == false).Select(x => x.Username).FirstOrDefault();
+                return !string.IsNullOrEmpty(userInPasswordReset);
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
     }
 }

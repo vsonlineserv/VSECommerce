@@ -77,7 +77,7 @@ namespace VSOnline.VSECommerce.Controllers
                     int userId = _userService.ValidateVSUsers(oAuthDTO.username, oAuthDTO.password);
                     if (userId == 0)
                     {
-                        return BadRequest("invalid_grant : Invalid credintial received");
+                        return BadRequest("Invalid credintial received");
                     }
                     userRole = _userService.GetUserRoleForId(userId).ToString();
                     var token = _userService.GenerateJwtToken(userId, userRole);
@@ -91,7 +91,7 @@ namespace VSOnline.VSECommerce.Controllers
                     return StatusCode(STATUSCODE_FAILURE, "User not Exist");
 
                 }
-                return BadRequest("invalid_grant : Invalid Grant Type");
+                return BadRequest("Invalid Grant Type");
             }
             catch (Exception ex)
             {

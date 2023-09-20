@@ -97,6 +97,14 @@ namespace VSOnline.VSECommerce.Domain.Helper
             var mailBody = mailClient.GetMailBody(Enums.MailTemplate.DeleteInformationMail).FormatWith (new { userName = username, email = toMail });     
             mailClient.SendMail(toMail, mailBody, Enums.MailTemplate.DeleteInformationMail);
         }
+        //merchant
+        public void SendForgetPasswordMailMerchant(string toMail, string uniqueId, string username, string storeName)
+        {
+            var mailClient = new MailClient();
+            var mailBody = mailClient.GetMailBody(Enums.MailTemplate.ForgotPasswordMerchant).FormatWith
+                (new { uid = uniqueId, username, storeName });
+            mailClient.SendMail(toMail, mailBody, Enums.MailTemplate.ForgotPasswordMerchant);
+        }
     }
 
 }

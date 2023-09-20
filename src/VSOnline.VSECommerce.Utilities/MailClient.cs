@@ -104,6 +104,12 @@ namespace VSOnline.VSECommerce.Utilities
                         body = sr.ReadToEnd();
                     }
                     break;
+                case Enums.MailTemplate.ForgotPasswordMerchant:
+                    using (var sr = new StreamReader(eMailTemplateLocation + "ForgotPasswordMerchant.html"))
+                    {
+                        body = sr.ReadToEnd();
+                    }
+                    break;
             }
             return body;
         }
@@ -135,11 +141,11 @@ namespace VSOnline.VSECommerce.Utilities
             {
                 case Enums.MailTemplate.UserAccountCreated:
                 case Enums.MailTemplate.RetailerAccountCreated:
-                    return "support@vsonlineservices.com";
+                    return "support@ecommerce.com";
                 case Enums.MailTemplate.WelcomeEmail:
-                    return "support@vsonlineservices.com";
+                    return "support@ecommerce.com";
             }
-            return "support@vsonlineservices.com";
+            return "support@ecommerce.com";
         }
         public string GetFromEmailDisplayName(Enums.MailTemplate templateEnum)
         {

@@ -54,7 +54,8 @@ namespace VSOnline.VSECommerce.Utilities
             OrderRelated = 23,
             SiteAdminInformation = 100,
             ForgotPasswordForVbuy = 101,
-            DeleteInformationMail = 102,  
+            DeleteInformationMail = 102,
+            ForgotPasswordMerchant = 103
         }
 
         public enum SortBy
